@@ -1,0 +1,12 @@
+# docker/kong.yml
+services:
+  kong:
+    image: kong:3.5
+    environment:
+      KONG_DATABASE: "off"
+      KONG_DECLARATIVE_CONFIG: /kong/kong.yml
+    volumes:
+      - ./kong.yml:/kong/kong.yml
+    ports:
+      - 8000:8000
+      - 8001:8001

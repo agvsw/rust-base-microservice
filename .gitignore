@@ -1,0 +1,16 @@
+# Rust build directory
+/auth-service/src/target/
+
+# Cargo files
+**/Cargo.lock
+
+# Backup & IDE/editor files
+*.rs.bk
+*.swp
+*.tmp
+
+# VSCode
+.vscode/
+
+# IntelliJ / CLion / RustRover
+.idea/
